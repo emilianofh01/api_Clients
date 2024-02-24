@@ -1,0 +1,10 @@
+// Documento donde se configura las rutas de los archivos para la base de datos
+
+const path = require('path');
+
+module.exports = {
+    "config": path.resolve("./src/database/config", "config.js"),  // Ruta del archivo de configuración de la BD
+    "models-path": path.resolve("./src/database/models"), // Ruta del archivo de los modelos de la BD
+    "seeders-path": path.resolve("./src/database/seeders"), // Ruta del archivo de los seeders de la BD
+    "migrations-path": path.resolve("./src/database/migrations") // Ruta del archivo de los migraciones de la BD
+}
